@@ -36,3 +36,9 @@ extension UIView {
     self.layer.borderColor = UIColor.borderHighlightGray.cgColor
   }
 }
+
+struct FontNames {
+  static let latoBold = "Lato-Bold"
+  static let latoRegular = "Lato-Regular"
+  static let latoLight = "Lato-Light"
+}
