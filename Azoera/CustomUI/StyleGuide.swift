@@ -35,6 +35,10 @@ extension UIView {
     self.layer.borderWidth = 1
     self.layer.borderColor = UIColor.borderHighlightGray.cgColor
   }
+  
+  func rotate(by: CGFloat) {
+    self.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+  }
 }
 
 struct FontNames {
