@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F712A6512227296B00AC3B78 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712A6502227296B00AC3B78 /* StyleGuide.swift */; };
+		F712A6552227314D00AC3B78 /* AzoeraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712A6542227314D00AC3B78 /* AzoeraTextField.swift */; };
+		F712A6572227358700AC3B78 /* TransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712A6562227358700AC3B78 /* TransparentNavigationController.swift */; };
 		F7318AAC2227045D00398CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7318AAB2227045D00398CD9 /* AppDelegate.swift */; };
-		F7318AAE2227045D00398CD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7318AAD2227045D00398CD9 /* ViewController.swift */; };
+		F7318AAE2227045D00398CD9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7318AAD2227045D00398CD9 /* WelcomeViewController.swift */; };
 		F7318AB12227045D00398CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7318AAF2227045D00398CD9 /* Main.storyboard */; };
-		F7318AB32227045E00398CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7318AB22227045E00398CD9 /* Assets.xcassets */; };
+		F7318AB32227045E00398CD9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7318AB22227045E00398CD9 /* Colors.xcassets */; };
 		F7318AB62227045E00398CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7318AB42227045E00398CD9 /* LaunchScreen.storyboard */; };
+		F7318AC0222712D700398CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7318ABF222712D700398CD9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F712A6502227296B00AC3B78 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		F712A6542227314D00AC3B78 /* AzoeraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzoeraTextField.swift; sourceTree = "<group>"; };
+		F712A6562227358700AC3B78 /* TransparentNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavigationController.swift; sourceTree = "<group>"; };
 		F7318AA82227045D00398CD9 /* Azoera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azoera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7318AAB2227045D00398CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7318AAD2227045D00398CD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7318AAD2227045D00398CD9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F7318AB02227045D00398CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F7318AB22227045E00398CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7318AB22227045E00398CD9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F7318AB52227045E00398CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7318AB72227045E00398CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7318ABF222712D700398CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F712A6582227358C00AC3B78 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				F712A6502227296B00AC3B78 /* StyleGuide.swift */,
+				F712A6542227314D00AC3B78 /* AzoeraTextField.swift */,
+				F712A6562227358700AC3B78 /* TransparentNavigationController.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		F7318A9F2227045D00398CD9 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +73,13 @@
 			isa = PBXGroup;
 			children = (
 				F7318AAB2227045D00398CD9 /* AppDelegate.swift */,
-				F7318AAD2227045D00398CD9 /* ViewController.swift */,
+				F7318AAD2227045D00398CD9 /* WelcomeViewController.swift */,
 				F7318AAF2227045D00398CD9 /* Main.storyboard */,
-				F7318AB22227045E00398CD9 /* Assets.xcassets */,
+				F7318ABF222712D700398CD9 /* Assets.xcassets */,
+				F7318AB22227045E00398CD9 /* Colors.xcassets */,
 				F7318AB42227045E00398CD9 /* LaunchScreen.storyboard */,
 				F7318AB72227045E00398CD9 /* Info.plist */,
+				F712A6582227358C00AC3B78 /* CustomUI */,
 			);
 			path = Azoera;
 			sourceTree = "<group>";
@@ -123,8 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7318AB62227045E00398CD9 /* LaunchScreen.storyboard in Resources */,
-				F7318AB32227045E00398CD9 /* Assets.xcassets in Resources */,
+				F7318AB32227045E00398CD9 /* Colors.xcassets in Resources */,
 				F7318AB12227045D00398CD9 /* Main.storyboard in Resources */,
+				F7318AC0222712D700398CD9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7318AAE2227045D00398CD9 /* ViewController.swift in Sources */,
+				F7318AAE2227045D00398CD9 /* WelcomeViewController.swift in Sources */,
 				F7318AAC2227045D00398CD9 /* AppDelegate.swift in Sources */,
+				F712A6512227296B00AC3B78 /* StyleGuide.swift in Sources */,
+				F712A6572227358700AC3B78 /* TransparentNavigationController.swift in Sources */,
+				F712A6552227314D00AC3B78 /* AzoeraTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
