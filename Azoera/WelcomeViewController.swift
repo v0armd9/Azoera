@@ -25,6 +25,8 @@ class WelcomeViewController: UIViewController {
     azoreoIcon.addAccentBorder()
     azoreoIcon.addSmallCornerRadius()
     signUpButton.addLargeCornerRadius()
+    rotate(view: loginButton)
+    rotate(view: signUpToggleButton)
   }
   
   @IBAction func signUpToggleButtonTapped(_ sender: Any) {
@@ -55,6 +57,10 @@ class WelcomeViewController: UIViewController {
       self.disclosureLabel.text = "Help?"
       self.disclosureButton.setTitle("FAQ", for: .normal)
     }
+  }
+  
+  func rotate(view: UIView) {
+    view.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
   }
 }
 
