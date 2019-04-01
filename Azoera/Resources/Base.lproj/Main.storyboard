@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Azoera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lj-8n-fzz">
+                                <rect key="frame" x="0.0" y="281.5" width="391" height="172"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-pZ-J6j">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyI-vJ-oiV">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="83"/>
+                                                <state key="normal" title="Log in"/>
+                                                <connections>
+                                                    <action selector="loginToggleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJr-Q5-WjD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuy-1i-ShP">
+                                                <rect key="frame" x="0.0" y="89" width="136" height="83"/>
+                                                <state key="normal" title="Sign Up"/>
+                                                <connections>
+                                                    <action selector="signUpToggleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJe-x9-Ejt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="IxS-am-dVM">
+                                        <rect key="frame" x="136" y="0.0" width="255" height="172"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gy-Z5-MCM" customClass="AzoeraTextField" customModule="Azoera" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="H0D-tL-OSe"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="poJ-a3-b8P" customClass="AzoeraTextField" customModule="Azoera" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="62" width="255" height="48"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oPL-IR-V8k" customClass="AzoeraTextField" customModule="Azoera" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="124" width="255" height="48"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-bf-QnX">
+                                <rect key="frame" x="283" y="467.5" width="78" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-zR-SVR">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                        <state key="normal" title="Help?"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-Kg-bNY">
+                                        <rect key="frame" x="48" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="FAQ"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTf-L6-E2m" customClass="AzoeraButton" customModule="Azoera" customModuleProvider="target">
+                                <rect key="frame" x="136" y="548" width="199" height="48"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sign me up"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-Em-qjW">
+                                <rect key="frame" x="60" y="147.5" width="315" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Azoera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WR6-3f-zwH" customClass="LatoBoldLabel" customModule="Azoera" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-sm-3g9" customClass="LatoLightLabel" customModule="Azoera" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="33.5" width="315" height="38.5"/>
+                                        <string key="text">Log in or sign up to explore
+new Azoera Features</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="azoreoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qVw-On-kHt">
+                                <rect key="frame" x="60" y="61" width="44.5" height="44.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qVw-On-kHt" secondAttribute="height" id="iBv-W4-xg9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j3a-bf-QnX" firstAttribute="top" secondItem="2lj-8n-fzz" secondAttribute="bottom" constant="14" id="6Vx-Y1-ffI"/>
+                            <constraint firstItem="fhi-Em-qjW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.55" id="81m-su-gN6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GTf-L6-E2m" secondAttribute="trailing" constant="40" id="8M2-2V-u95"/>
+                            <constraint firstItem="GTf-L6-E2m" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.072" id="8hr-1d-1aU"/>
+                            <constraint firstItem="GTf-L6-E2m" firstAttribute="leading" secondItem="IxS-am-dVM" secondAttribute="leading" id="DHL-19-ff3"/>
+                            <constraint firstItem="qVw-On-kHt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.067" id="RZv-sd-cyp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2lj-8n-fzz" secondAttribute="trailing" constant="-16" id="THP-Xk-tyC"/>
+                            <constraint firstItem="qVw-On-kHt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.25" id="TbR-9M-lOM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fhi-Em-qjW" secondAttribute="trailing" id="Ti4-mM-OsO"/>
+                            <constraint firstItem="GTf-L6-E2m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.715" id="U4i-2z-wX7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j3a-bf-QnX" secondAttribute="trailing" constant="14" id="VVM-OU-0Id"/>
+                            <constraint firstItem="fhi-Em-qjW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.84" id="WI5-07-w6Z"/>
+                            <constraint firstItem="3gy-Z5-MCM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.072" priority="999" id="WnM-I1-MX6"/>
+                            <constraint firstItem="IxS-am-dVM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.68" id="XBE-Ay-ISh"/>
+                            <constraint firstItem="2lj-8n-fzz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aIu-zi-l72"/>
+                            <constraint firstItem="2lj-8n-fzz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="34" id="nRS-mL-rHS"/>
+                            <constraint firstItem="qVw-On-kHt" firstAttribute="leading" secondItem="fhi-Em-qjW" secondAttribute="leading" id="yi1-Xo-7uI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="54j-r5-toc"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="oPL-IR-V8k" id="bc3-kh-JCr"/>
+                        <outlet property="emailTextFiled" destination="3gy-Z5-MCM" id="TXp-AN-C8z"/>
+                        <outlet property="faqButton" destination="1eh-Kg-bNY" id="AlN-Pn-9RJ"/>
+                        <outlet property="helpButton" destination="NMB-zR-SVR" id="blr-mM-rNC"/>
+                        <outlet property="loginButton" destination="SyI-vJ-oiV" id="rFb-Mi-4cj"/>
+                        <outlet property="logoImageView" destination="qVw-On-kHt" id="T4A-LQ-ghU"/>
+                        <outlet property="passwordTextField" destination="poJ-a3-b8P" id="gfE-GP-l67"/>
+                        <outlet property="signInButton" destination="GTf-L6-E2m" id="dGH-Nt-e7R"/>
+                        <outlet property="signUpButton" destination="fuy-1i-ShP" id="cTs-WA-ZR9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="azoreoIcon" width="40" height="40"/>
+    </resources>
+</document>
