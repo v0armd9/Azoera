@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C1F5CB522DCF29E0047A4DC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F5CB422DCF29E0047A4DC /* WelcomeViewController.swift */; };
 		2C1F5CB922DCF9CA0047A4DC /* AzoeraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F5CB822DCF9CA0047A4DC /* AzoeraTextField.swift */; };
+		2C1F5CBC22DD0CCF0047A4DC /* AzoeraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F5CBB22DD0CCF0047A4DC /* AzoeraButton.swift */; };
 		F73DEEA4223AF4550023C6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */; };
 		F73DEEA9223AF4550023C6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73DEEA7223AF4550023C6C6 /* Main.storyboard */; };
 		F73DEEAB223AF4570023C6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73DEEAA223AF4570023C6C6 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		2C1F5CB422DCF29E0047A4DC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2C1F5CB822DCF9CA0047A4DC /* AzoeraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzoeraTextField.swift; sourceTree = "<group>"; };
+		2C1F5CBB22DD0CCF0047A4DC /* AzoeraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzoeraButton.swift; sourceTree = "<group>"; };
 		F73DEEA0223AF4550023C6C6 /* Azoera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azoera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73DEEA8223AF4550023C6C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				2C1F5CB822DCF9CA0047A4DC /* AzoeraTextField.swift */,
+				2C1F5CBB22DD0CCF0047A4DC /* AzoeraButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C1F5CB522DCF29E0047A4DC /* WelcomeViewController.swift in Sources */,
+				2C1F5CBC22DD0CCF0047A4DC /* AzoeraButton.swift in Sources */,
 				F73DEEA4223AF4550023C6C6 /* AppDelegate.swift in Sources */,
 				F763B96C2252693E005697E5 /* StyleGuide.swift in Sources */,
 				2C1F5CB922DCF9CA0047A4DC /* AzoeraTextField.swift in Sources */,
